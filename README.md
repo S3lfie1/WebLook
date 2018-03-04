@@ -1,4 +1,5 @@
 # WebLook
 Simple Web Scraper [JAVA]
 
-![Screenshot](WebLook.png)
+<img src="https://raw.githubusercontent.com/S3lfie1/WebLook/master/webLook.png"/>
+
