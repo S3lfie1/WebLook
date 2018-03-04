@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.weblook.view.WebLookController">
+   <children>
+      <SplitPane dividerPositions="0.32663316582914576" orientation="VERTICAL" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="598.0">
+               <children>
+                  <TextField fx:id="txtUrl" layoutX="14.0" layoutY="55.0" prefHeight="25.0" prefWidth="466.0" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnScan" layoutX="492.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Start Scan" />
+                  <ChoiceBox fx:id="choiceBox" layoutX="14.0" layoutY="88.0" prefWidth="150.0" />
+                  <Button fx:id="btnClear" layoutX="492.0" layoutY="88.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Clear" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="207.0" prefWidth="598.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="243.0" text="by Jakub Mazur" textFill="#b5b4b4">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="txtResults" layoutX="14.0" layoutY="14.0" prefHeight="231.0" prefWidth="570.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
